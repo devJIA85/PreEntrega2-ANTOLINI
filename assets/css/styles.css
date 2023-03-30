@@ -507,7 +507,15 @@ input {
     }
 }
 
-@media screen and (max-width: 1216px) {}
+@media screen and (max-width: 1216px) {
+    .about__container {
+        column-gap: 2.5rem;
+    }
+
+    .about__description {
+        padding-right: 0;
+    }
+}
 
 @media screen and (max-width: 1024px) {
     .container {
@@ -565,6 +573,32 @@ input {
 
     .main {
         margin-left: 0;
+    }
+
+    .about__container {
+        grid-template-columns: 1fr;
+        row-gap: 2.5rem;
+    }
+
+    .about__img {
+        width: 350px;
+    }
+
+    .about__data {
+        text-align: center;
+    }
+
+    .about__info {
+        justify-content: center;
+    }
+
+    .about__box {
+        padding: .75rem .5rem;
+    }
+
+    .about__description {
+        padding: 0 4rem;
+        text-align: center;
     }
 }
 
