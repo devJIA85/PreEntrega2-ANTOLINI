@@ -44,3 +44,8 @@ if(navClose) {
 
 
 /*=============== SHOW SCROLL UP ===============*/
+// toma todas sections que tienen un id definido
+const sections = document.querySelectorAll("section[id]")
+
+// agrega un event listener para el scroll
+window.addEventListener("scroll", navHighlighter);
