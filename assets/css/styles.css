@@ -122,7 +122,9 @@ input {
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
-
+.section {
+    padding: 6.5rem 0 2rem;
+}
 
 /*=============== SIDEBAR ===============*/
 .sidebar {
