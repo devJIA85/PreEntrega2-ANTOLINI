@@ -516,7 +516,7 @@ input {
 }
 
 /*===== Skills Section =====*/
-.skills_container {
+.skills__container {
     grid-template-columns: 360px 320px;
     column-gap: 3rem;
     justify-content: center;
@@ -556,8 +556,47 @@ input {
     margin-left: auto;
 }
 
+.skills__active .skills__arrow {
+    transform: rotate(-90deg);
+    transition: .3seg;
+}
+
+.skills [data-content] {
+    display: none;
+}
+
+.skills__active[data-content] {
+    display: block;
+}
+
 .skills__list {
     row-gap: 1.8rem;
+}
+
+.skills__titles {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--mb-0-5);
+}
+
+.skills__name {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+}
+
+.skills__bar,
+.skills__percentage {
+    height: 5px;
+    border-radius: .25rem;
+}
+
+.skills__bar {
+    background-color: var(--box-color);
+}
+
+.skills__percentage {
+    display: block;
+    background-color: var(--skin-color);
 }
 /*===== Work Section =====*/
 
@@ -767,6 +806,14 @@ input {
     .qualification__container {
         grid-template-columns: repeat(2, 290px);
     }
+
+    .skills__container {
+        grid-template-columns: 340px 300px;
+    }
+
+    .skills__list {
+        row-gap: 1.7rem;
+    }
 }
 
 /* Para Medium Devices */
@@ -777,6 +824,11 @@ input {
 
     .qualification__container {
         grid-template-columns: 290px;
+        row-gap: 3rem;
+    }
+
+    .skills__container {
+        grid-template-columns: 300px;
         row-gap: 3rem;
     }
     
@@ -892,7 +944,13 @@ input {
         row-gap: .5rem;
     }
 
+    .skills__container,
     .qualification__container {
         grid-template-columns: 1fr;
     }
+
+    .skills__title {
+        font-size: var(--normal-font-size);
+    }
+
 }
