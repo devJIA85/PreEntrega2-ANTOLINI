@@ -599,7 +599,9 @@ input {
     background-color: var(--skin-color);
 }
 /*===== Work Section =====*/
-
+.work__item {
+    color: var(--font-medium);
+}
 
 /* Active Item Work */
 
