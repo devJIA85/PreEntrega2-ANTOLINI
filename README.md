@@ -13,5 +13,8 @@ Para la sección del portfolio se usó una librería de (vainilla) js: MIXITUP [
 
 
 Iconos:
-https://boxicons.com
+https://boxicons.com //
 https://iconscout.com
+
+Swiper (Section de Testimonios):
+https://swiperjs.com
