@@ -337,3 +337,100 @@ $z-modal: 999;
 }
 
 
+// Media queries complementarias al Main CSS
+@media screen and (max-width: 1216px) {
+  .work__container {
+      grid-template-columns: repeat(2, 330px);
+      gap: 3rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .work__card {
+      padding: 1rem;
+  }
+
+  .work__img {
+      margin-bottom: var(--mb-0-75);
+  }
+
+  .work__title {
+      margin-bottom: var(--mb-0-25);
+  }
+
+  .services__container {
+      grid-template-columns: repeat(3, 220px);
+  }
+}
+
+// Para Medium Devices
+@media screen and (max-width: 768px) {
+  .work__container {
+      grid-template-columns: 330px;
+  }
+
+  .services__container {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+  }
+
+  .services__content {
+      padding: 3.5rem .5rem 1.25rem 1.5rem;
+  }
+
+  .services__icon {
+      font-size: 1.5rem;
+  }
+
+  .portfolio__popup-inner {
+      width: 420px;
+      padding: 2.8rem 1.5rem 2.5rem;
+  }
+
+  .portfolio__popup-content {
+      grid-template-columns: 1fr;
+      row-gap: 1.6rem;
+  }
+
+  .details__title {
+      font-size: var(--normal-font-size);
+  }
+
+  .portfolio__popup-close {
+      top: .5rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .services__modal-content {
+      padding: 4.5rem 1.5rem 2.5rem;
+  }
+
+  .services__modal-description {
+      padding: 0;
+  }
+
+  .work__container {
+      grid-template-columns: 300px;
+  }
+}
+
+// Para Small Devices
+@media screen and (max-width: 350px) {
+  .work__item {
+      font-size: var(--small-font-size);
+  }
+
+  .work__filters {
+      column-gap: .25rem;
+  }
+
+  .services__container {
+      grid-template-columns: max-content;
+  }
+
+  .services__content {
+      padding-right: 3.5rem;
+  }
+}
+

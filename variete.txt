@@ -1,0 +1,147 @@
+.services__modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  z-index: $z-modal;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+}
+
+.services__modal-content {
+  width: 500px;
+  position: relative;
+  background-color: $box-color;
+  padding: 4.5rem 2.5rem 2.5rem;
+  border-radius: .5rem;
+}
+
+.services__modal-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  font-size: 1.5rem;
+  color: $skin-color;
+  cursor: pointer;
+}
+
+.services__modal-title,
+.services__modal-description {
+  text-align: center;
+}
+
+.services__modal-title {
+  font-size: $h3-font-size;
+  font-weight: $font-medium;
+  margin-bottom: $mb-1;
+}
+
+.services__modal-description {
+  font-size: $small-font-size;
+  padding: 0 3.5rem;
+  margin-bottom: $mb-2;
+}
+
+.services__modal-services {
+  row-gap: $mb-0-75;
+}
+
+.services__modal-service {
+  display: flex;
+  align-items: center;
+  column-gap: .5rem;
+}
+
+.services__modal-icon {
+  color: $skin-color;
+  font-size: 1.1rem;
+}
+
+.services__modal-info {
+  font-size: $small-font-size;
+}
+
+
+
+
+
+
+
+$z-modal: 999;
+
+.services__modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  z-index: $z-modal;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+
+  &-content {
+    width: 500px;
+    position: relative;
+    background-color: $box-color;
+    padding: 4.5rem 2.5rem 2.5rem;
+    border-radius: 0.5rem;
+  }
+
+  &-close {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 1.5rem;
+    color: $skin-color;
+    cursor: pointer;
+  }
+
+  &-title,
+  &-description {
+    text-align: center;
+  }
+
+  &-title {
+    font-size: $h3-font-size;
+    font-weight: $font-medium;
+    margin-bottom: $mb-1;
+  }
+
+  &-description {
+    font-size: $small-font-size;
+    padding: 0 3.5rem;
+    margin-bottom: $mb-2;
+  }
+
+  &-services {
+    row-gap: $mb-0-75;
+  }
+
+  &-service {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+  }
+
+  &-icon {
+    color: $skin-color;
+    font-size: 1.1rem;
+  }
+
+  &-info {
+    font-size: $small-font-size;
+  }
+}
