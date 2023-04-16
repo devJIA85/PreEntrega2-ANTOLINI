@@ -599,7 +599,7 @@ input {
     background-color: var(--skin-color);
 }
 /*===== Work Section =====*/
-
+/* Hecho en SASS */
 
 /* Active Item Work */
 .active-work {
@@ -608,10 +608,10 @@ input {
 }
 
 /*===== Services Section =====*/
-
+/* Hecho en SASS */
 
 /* Active Modal*/
-
+/* Hecho en SASS */
 
 /*===== Testimonial Section =====*/
 
@@ -831,6 +831,10 @@ input {
     .work__title {
         margin-bottom: var(--mb-0-25);
     }
+
+    .services__container {
+        grid-template-columns: repeat(3, 220px);
+    }
 }
 
 /* Para Medium Devices */
@@ -851,6 +855,19 @@ input {
 
     .work__container {
         grid-template-columns: 330px;
+    }
+
+    .services__container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .services__content {
+        padding: 3.5rem .5rem 1.25rem 1.5rem;
+    }
+
+    .services__icon {
+        font-size: 1.5rem;
     }
     
     .footer__container {
@@ -950,6 +967,14 @@ input {
         padding: 0;
     }
 
+    .services__modal-content {
+        padding: 4.5rem 1.5rem 2.5rem;
+    }
+
+    .services__modal-description {
+        padding: 0;
+    }
+
     .work__container {
         grid-template-columns: 300px;
     }
@@ -1002,5 +1027,13 @@ input {
 
     .work__filters {
         column-gap: .25rem;
+    }
+
+    .services__container {
+        grid-template-columns: max-content;
+    }
+
+    .services__content {
+        padding-right: 3.5rem;
     }
 }
