@@ -16,5 +16,8 @@ Iconos:
 https://boxicons.com //
 https://iconscout.com
 
+FAVICON:
+https://realfavicongenerator.net
+
 Swiper (Section de Testimonios):
 https://swiperjs.com
