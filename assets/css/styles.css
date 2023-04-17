@@ -678,7 +678,7 @@ input {
 
 /* Swiper Class */
 .swiper-pagination-bullet {
-    background-color: var(--box-color);
+    background-color: rgb(139, 31, 31);
 }
 
 .swiper-pagination-bullet-active {
