@@ -120,6 +120,12 @@ $z-modal: 100;
   }
 }
 
+// Active Item Work
+.active-work {
+  background-color: $skin-color;
+  color: $title-color;
+}
+
 // Portfolio Popup
 .portfolio__popup {
   position: fixed;
@@ -361,6 +367,20 @@ $z-modal: 999;
   .services__container {
       grid-template-columns: repeat(3, 220px);
   }
+
+  .portfolio__item-details {
+    margin-bottom: $mb-1-5;
+  }
+
+  .details__info {
+    li {
+      margin-bottom: $mb-0-5;
+    }
+  }
+
+  .details__title {
+    margin-bottom: $mb-0-75;
+  }
 }
 
 // Para Medium Devices
@@ -393,7 +413,7 @@ $z-modal: 999;
   }
 
   .details__title {
-      font-size: var(--normal-font-size);
+      font-size: $normal-font-size;
   }
 
   .portfolio__popup-close {
@@ -417,8 +437,11 @@ $z-modal: 999;
 
 // Para Small Devices
 @media screen and (max-width: 350px) {
+  .work__container {
+    grid-template-columns: 1fr;
+}
   .work__item {
-      font-size: var(--small-font-size);
+      font-size: $small-font-size;
   }
 
   .work__filters {
