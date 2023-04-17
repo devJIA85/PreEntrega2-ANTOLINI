@@ -10,3 +10,11 @@ Se usó principalmente:
 Combinando el uso de Flexbox, Grids, media queries y SASS (en section WRK).
   
 Para la sección del portfolio se usó una librería de (vainilla) js: MIXITUP [http://kunkalabs.com/mixitup / https://github.com/patrickkunka/mixitup]
+
+
+Iconos:
+https://boxicons.com //
+https://iconscout.com
+
+Swiper (Section de Testimonios):
+https://swiperjs.com
