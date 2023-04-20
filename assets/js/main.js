@@ -105,7 +105,6 @@ modalCloses.forEach((modalClose) => {
     })
 })
 
-
 /*=============== SWIPER TESTIMONIAL ===============*/
 let swiper = new Swiper(".testimonials__container", {
     spaceBetween: 24,
@@ -127,7 +126,7 @@ let swiper = new Swiper(".testimonials__container", {
   });
 
 /*=============== INPUT ANIMATION ===============*/
-const inputs = document.querySelectorAll(" input");
+const inputs = document.querySelectorAll(".input");
 
 function focusFunc() {
     let parent = this.parentNode;
@@ -141,7 +140,7 @@ function blurFunc() {
 }
 inputs.forEach((input) => {
     input.addEventListener("focus", focusFunc);
-    input.addEventListener("blur", blurfunc);
+    input.addEventListener("blur", blurFunc);
 })
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
@@ -174,5 +173,5 @@ function navHighlighter()
 }
 
 /*=============== SHOW SCROLL UP ===============*/
-
+// FALTA!!!
 
