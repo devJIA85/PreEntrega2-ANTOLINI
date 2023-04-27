@@ -1161,12 +1161,22 @@ textarea.input {
 }
 
 /*=============== SCROLL UP ===============*/
-
+.scroll-up-btn {
+    position: fixed;
+    font-size: var(--biggest-font-size);
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    color: var(--skin-color);
+    cursor: pointer;
+  }
+  
 
 /* Show Scroll Up*/
 
 
 /*=============== SCROLL BAR ===============*/
+/* Para colorear la Scroll bar*/
 ::-webkit-scrollbar {
     width: .60rem;
     background-color: var(--scroll-bar-color);
